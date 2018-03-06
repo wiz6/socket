@@ -11,6 +11,6 @@ app.get('/', (req, res) => {
 	res.send('index.html');
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
 	console.log(`Server is up in port ${port}`);
 });
