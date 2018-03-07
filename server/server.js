@@ -36,7 +36,7 @@ io.on('connection', (socket) => {
 
 	socket.on('join', (params, callback) => {
 		if (!isRealString(params.name) || !isRealString(params.room)) {
-			return callback('Name or room is not real string');
+			return callback('Name or room is nsot real string');
 		}
 
 		socket.join(params.room);
